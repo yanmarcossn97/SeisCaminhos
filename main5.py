@@ -6,8 +6,8 @@ import translateText
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 
-TOKEN = "ODQwMTg4NzY1Mzc2ODcyNDQ4.YJUkww.oskeMMmJNsF-EcdXlMQnVuidbGc"
-channel_id = 830863122545508372
+TOKEN = # token of the bot
+channel_id = # channel id
 
 client = discord.Client()
 
