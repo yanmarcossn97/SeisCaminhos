@@ -4,7 +4,6 @@ import json
 import translateText
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from apscheduler.triggers.cron import CronTrigger
 
 TOKEN = # token of the bot
 channel_id = # channel id
