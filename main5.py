@@ -19,9 +19,9 @@ def get_quote(arg):
 
 async def daily_quote():
   channel = client.get_channel(channel_id)
-  quote = get_quote("https://zenquotes.io/api/today")
-  text = translateText.translate_text(quote)
-  await channel.send(text)
+  quote_en = get_quote("https://zenquotes.io/api/today")
+  quote_pt = translateText.translate_text(quote_en)
+  await channel.send(quote_pt)
 
 @client.event
 async def on_ready():
@@ -42,8 +42,8 @@ async def on_message(message):
     return
 
   if message.content.startswith('$insp'):
-    quote = get_quote("https://zenquotes.io/api/random")
-    text = translateText.translate_text(quote)
-    await message.channel.send(text)
+    quote_en = get_quote("https://zenquotes.io/api/random")
+    quote_pt = translateText.translate_text(quote_en)
+    await message.channel.send(quote_pt)
 
 client.run(TOKEN)
